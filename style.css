@@ -1,0 +1,346 @@
+body {
+  font-family: 'Space Mono';
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+
+/** Navigation bar **/
+.navigation {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+
+/** Styling for unordered list **/
+.navigation ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+
+/** Styling for menu items **/
+.navigation li {
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  display: flex;
+}
+
+/** Styling menu icon **/
+.navigation img {
+  height: auto;
+  max-height: 80px;
+  display: block;
+  margin-left: 1rem;
+}
+
+/** Placing the menu items correctly **/
+.menu-list {
+  display: flex;
+  padding-left: 2.5%;
+}
+
+/** Hover effect for menu items **/
+.navigation li:hover {
+  transform: scale(1.03);
+  transition: color 0.08s ease-in-out, transform 0.08s ease-in-out;
+  color: #4B4B4B;
+}
+
+/** Hamburger menu **/
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #ffffff;
+    padding: 1rem 0;
+  }
+
+  .menu-list.active {
+    display: flex;
+    z-index: 1000;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-list ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .navigation li {
+    margin: 0;
+  }
+}
+
+/* Heropage/mainsection */
+
+.mainsection {
+  position: relative;
+  text-align: center;
+  /* center content horizontally */
+  padding-top: 120px;
+  /* space from navbar */
+  color: rgb(255, 255, 255);
+  display: block;
+  /* default, not flex */
+}
+
+.mainsection img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: clamp(200px, 50vh, 900px);
+  /* optional limit */
+  border-radius: 0.5rem;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+  /* center image horizontally */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease;
+
+}
+
+.hero-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.75em 1.5em;
+  font-family: 'Noto Sans';
+  font-size: 1em;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.8);
+  box-shadow 0.5s ease,
+  filter 0.3s ease,
+
+}
+
+.hero-button:hover {
+  box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.3);
+  /* optional: tiny blur for glow effect */
+}
+
+.hero-image-wrapper {
+  position: relative;
+  display: inline-block;
+  /* shrink-wrap the image */
+}
+
+/* Logo carousel */
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  width: 45%;
+  margin: 0 auto;
+  white-space: nowrap;
+  padding-top: 1%;
+}
+
+.logos-track {
+  display: flex;
+  width: max-content;
+  animation: carousel 20s linear infinite;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.logos-carousel img {
+  height: 50px;
+  margin: 0;
+  flex: 0 0 auto;
+}
+
+
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.logos-carousel {
+  display: flex;
+  gap: 100px;
+  padding-right: 100px;
+}
+
+.carousel p {
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0%;
+}
+
+/* Cards CSS */
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+  /* centers cards in each grid cell */
+}
+
+.cards {
+  position: relative;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border: 2px solid #ffffff;
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans';
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transition: box-shadow 0.3s ease;
+
+}
+
+@media (max-width: 600px) {
+  .cards {
+    max-width: 200px;
+    /* smaller width on mobile */
+  }
+}
+
+.cards img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.cards:hover img {
+  transform: scale(1.3);
+  filter: brightness(0.8);
+  /* dims image */
+}
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px 8px black;
+}
+
+.card-small-text {
+  font-size: small;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Footer */
+
+.footersection {
+  border-top: 2px solid #9E9E9E;
+  margin-top: 40px;
+  background-color: #000000;
+  color: #fff;
+  height: 40%;
+  width: 100%;
+}
+
+
+
+.newsletter {
+  margin: 40px;
+  padding: 20px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  text-align: left;
+  display: flex;
+  width: 20%;
+
+}
+
+.newsletter-agree {
+  font-size: x-small;
+}
+
+.text-logo-container {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+
+
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* ✅ allows wrapping */
+  gap: 10px;
+  /* optional spacing */
+  max-width: 100%;
+}
+
+.footertext {
+  font-family: 'Noto Sans';
+  color: white;
+  font-size: small;
+  padding-top: 15px;
+  margin: 0 auto;
+}
