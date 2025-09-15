@@ -286,6 +286,7 @@ h1 {
   box-shadow: var(--shadow-lg);
   transition: all 0.2s ease;
   margin-top: var(--space-1);
+  color: black;
 }
 
 .buy-btn:hover {
@@ -453,11 +454,12 @@ h3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
   color: var(--text);
-  margin: 0 auto;
   padding: var(--space-1);
   box-sizing: border-box;
   gap: var(--space-3);
   overflow-x: hidden;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .bento-box-container div {
