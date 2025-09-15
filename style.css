@@ -444,6 +444,22 @@ h3 {
   }
 }
 
+/* Information section MEDIA QUERIES */
+@media (min-width: 1024px) {
+
+  .information-section img {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto var(--space-4) auto;
+  }
+
+  .information-section p {
+    width: 30%;
+  }
+
+}
 
 
 /* BENTOBOX SECTION  */
@@ -452,7 +468,7 @@ h3 {
 .bento-box-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
+  grid-template-columns: repeat(auto-fill, minmax(10%, 40%));
   color: var(--text);
   padding: var(--space-1);
   box-sizing: border-box;
@@ -487,6 +503,17 @@ h3 {
 }
 
 
+@media (min-width: 1024px) {
+
+
+  .bento-box-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 20%));
+
+  }
+
+}
 
 
 
