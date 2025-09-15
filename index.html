@@ -5,56 +5,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naviaud.io</title>
-
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet">
-
+  <link rel="icon" href="./Logos/White-butterfly-logo.svg">
 </head>
 
 <body>
 
-
-  <nav class="navigation">
-
-    <img src="./Images/navilogofinal.svg" alt="">
-
-    <!-- Hamburger button for mobile -->
-    <button class="hamburger">&#9776;</button>
+  <!-- NAVIGATION -->
+  <div class="nav-container-wrapper">
+    <nav class="nav-container">
+      <div class="logo">
+        <a href="index.html"> <img class="logo-image" src="./Logos/Logo2.svg" alt="Image logo"></a>
 
 
-    <!-- Header -->
-    <div class="menu-list">
-      <ul>
-        <li> Home </li>
-        <li> Plugins </li>
-        <li> About </li>
-        <li> Contact </li>
+      </div>
+
+      <ul class="nav-items">
+        <li><a href="#plugins">Plugins</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
-    </div>
-  </nav>
 
-    <!-- Main -->
+      <button class="hamburger" aria-label="Toggle Menu">≡</button>
 
-  <main class="mainsection">
-    <div class="hero-image-wrapper">
-      <img src="./Images/heroimage3.png" alt="">
-      <button class="hero-button">Buy now</button>
-    </div>
+    </nav>
+  </div>
 
+  <!-- HERO PAGE -->
+  <header class="header">
+    <h1> A harmonic generator, <br> <em>reimagined. </em></h1>
+    <p>Add color to any soundscape.</p>
+    <button class="buy-btn">Buy chroma</button>
+    <img src="./Images/Macbookimage2.png" alt="">
+    <!-- <img src="./Images/heroimage1.png" alt=""> -->
 
-  </main>
+  </header>
 
   <!-- DAW Carousel -->
   <section class="carousel">
@@ -62,113 +54,173 @@
     <div class="logos">
       <div class="logos-track">
         <div class="logos-carousel">
-          <img src="./Images/Logos/albletonWhite.png" alt="Ableton logo">
-          <img src="./Images/Logos/bitwig.webp" alt="Bitwig logo">
-          <img src="./Images/Logos/Cubase.webp" alt="Cubase logo">
-          <img src="./Images/Logos/Flstudio.webp" alt="FL logo">
-          <img src="./Images/Logos/Logic.webp" alt="Logic logo">
-          <img src="./Images/Logos/Maschine.webp" alt="Maschine logo">
-          <img src="./Images/Logos/Protools.svg" alt="Pro tools logo">
-          <img src="./Images/Logos/Reaper.webp" alt="Reaper logo">
-          <img src="./Images/Logos/Reason.webp" alt="Reason logo">
+          <img src="/Images/Carousel-logos/albletonWhite.png" alt="Ableton logo">
+          <img src="/Images/Carousel-logos/bitwig.webp" alt="Bitwig logo">
+          <img src="/Images/Carousel-logos/Cubase.webp" alt="Cubase logo">
+          <img src="/Images/Carousel-logos/Flstudio.webp" alt="FL logo">
+          <img src="/Images/Carousel-logos/Logic.webp" alt="Logic logo">
+          <img src="/Images/Carousel-logos/Maschine.webp" alt="Maschine logo">
+          <img src="/Images/Carousel-logos/Protools.svg" alt="Pro tools logo">
+          <img src="/Images/Carousel-logos/Reaper.webp" alt="Reaper logo">
+          <img src="/Images/Carousel-logos/Reason.webp" alt="Reason logo">
         </div>
         <div class="logos-carousel" aria-hidden="true">
-          <img src="./Images/Logos/albletonWhite.png" alt="Ableton logo">
-          <img src="./Images/Logos/bitwig.webp" alt="Bitwig logo">
-          <img src="./Images/Logos/Cubase.webp" alt="Cubase logo">
-          <img src="./Images/Logos/Flstudio.webp" alt="FL logo">
-          <img src="./Images/Logos/Logic.webp" alt="Logic logo">
-          <img src="./Images/Logos/Maschine.webp" alt="Maschine logo">
-          <img src="./Images/Logos/Protools.svg" alt="Pro tools logo">
-          <img src="./Images/Logos/Reaper.webp" alt="Reaper logo">
-          <img src="./Images/Logos/Reason.webp" alt="Reason logo">
+          <img src="/Images/Carousel-logos/albletonWhite.png" alt="Ableton logo">
+          <img src="/Images/Carousel-logos/bitwig.webp" alt="Bitwig logo">
+          <img src="/Images/Carousel-logos/Cubase.webp" alt="Cubase logo">
+          <img src="/Images/Carousel-logos/Flstudio.webp" alt="FL logo">
+          <img src="/Images/Carousel-logos/Logic.webp" alt="Logic logo">
+          <img src="/Images/Carousel-logos/Maschine.webp" alt="Maschine logo">
+          <img src="/Images/Carousel-logos/Protools.svg" alt="Pro tools logo">
+          <img src="/Images/Carousel-logos/Reaper.webp" alt="Reaper logo">
+          <img src="/Images/Carousel-logos/Reason.webp" alt="Reason logo">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Cards -->
+  <!-- Information section -->
 
-  <section class="card-container">
+  <section class="information-section">
 
-    <div class="cards">
-      <img src="./Images/card1.png" alt="">
-      <div class="card-text">
-        <p>Excite</p>
-        <p class="card-small-text"> Add shimmer and polish to your audio with a spectral exciter, breathing life into
-          stale tracks and enhancing clarity and presence.
+    <img src="./Images/heroimage1.png" alt="">
+    <h3>CHROMA</h3>
+
+    <p> An audio harmonic sweetener adds that magical sheen to your tracks, gently enriching harmonics without
+      overpowering the original sound. With precise control over coloration and decay, it transforms even the harshest
+      pad or bass into something warm, musical, and lush. The secret is in preserving transients so clarity isn’t lost —
+      <br>
+
+      letting rich overtones sit behind the core of the sound rather than muddying it.
+    </p>
+  </section>
+
+
+
+  <!-- bENTO BOXES HERE -->
+
+  <section class="bento-box-container">
+
+    <div class="bento-box-latency">
+      <img src="Images/Bento-box-icons/latency-icon.svg" alt="">
+      <p>Zero latency</p>
+    </div>
+
+    <div class="bento-box-oversampling">
+      <img src="./Images/Bento-box-icons/Oversampling-icon.svg" alt="">
+      <p>Over-<br>sampling up to 8x</p>
+    </div>
+
+    <div class="bento-box-format">
+      <img src="./Images/Bento-box-icons/Format-icon.svg" alt="">
+      <p>Plugin Formats: VST3 <br> AU <br> AAX <br> CLAP</p>
+    </div>
+
+    <div class="bento-box-update">
+      <img src="./Images/Bento-box-icons/Update-icon.svg" alt="">
+      <p>Update Methods:<br> Auto-update or manual updates</p>
+    </div>
+
+    <div class="bento-box-scaling">
+      <img src="./Images/Bento-box-icons/Scaling-icon.svg" alt="">
+      <p>Resizable, adaptive, and high-DPI ready.</p>
+    </div>
+
+    <div class="bento-box-install">
+      <img src="./Images/Bento-box-icons/Install-icon.svg" alt="">
+      <p>Size:<br>50 MB</p>
+    </div>
+
+    <div class="bento-box-cpu">
+      <img src="/Images/Bento-box-icons/cpu-icon.svg" alt="">
+      <p>Requires minimum 2.5 GHz CPU.</p>
+    </div>
+
+    <div class="bento-box-price">
+      <img src="/Images/Bento-box-icons/Dollar-icon.svg" alt="">
+      <p>$99</p>
+    </div>
+
+
+
+  </section>
+
+
+  <!-- En stor högst uppe:
+(spannar 4 rader, med en video och en text)
+harmonic texture with one click
+2 som spannar 2-3 ner och 2-3 lång:
+Screenshot of the plugin UI
+och någon cool bild
+
+Längst nere 4 st små på rad
+4 st längsat nere:
+Latency (zero / low)
+Installation size
+Pris kanske
+Plugin Formats — VST3 / AU / AAX / CLAP
+Update Method — Auto-update or manual updates
+Oversampling Options — 2x / 4x / 8x
+Scalability / UI Features
+Minimum / Recommended CPU model & speed
+
+
+Audio demo kanske precis innan testimonials? -->
+
+
+
+
+
+  <!-- Card section -->
+
+  <div class="card-wrapper">
+    <article class="card-container">
+
+      <div class="cards">
+        <p> "I love how it enhances the harmonic content while keeping the original tone completely intact. It gives
+          everything this polished, cohesive feel."
+        </p>
+        <p class="testimonial-owner">
+          Jamie Lee <br>
+          EchoNest Studios
         </p>
 
       </div>
-    </div>
-
-    <div class="cards">
-      <img src="./Images/card2.png" alt="">
-      <div class="card-text">
-        <p>Clarity</p>
-        <p class="card-small-text">Uncover the hidden brilliance in your sound with a spectral exciter, adding harmonic
-          richness and dynamic sparkle to every mix.</p>
+      <div class="cards">
+        <p> "The harmonic generation is incredibly precise, enhancing overtones without introducing unwanted
+          artifacts."
+        </p>
+        <p class="testimonial-owner">
+          Riley Kim <br>
+          Quantum Audio
+        </p>
       </div>
-    </div>
-
-    <div class="cards">
-      <img src="./Images/card3.png" alt="">
-      <div class="card-text">
-        <p>Vibrance</p>
-        <p class="card-small-text">Infuse your tracks with new energy and detail using this spectral exciter, designed
-          to add brilliance and focus to your sound.</p>
+      <div class="cards">
+        <p> "The clarity and depth it adds are incredible — it makes even simple sounds feel expensive. It’s subtle,
+          but
+          it
+          completely elevates the vibe."
+        </p>
+        <p class="testimonial-owner">
+          Morgan Chase <br>
+          Aurora Mix Co.
+        </p>
       </div>
-    </div>
-
-
-
-  </section>
-
-  <!-- Footer -->
-
-  <footer class="footersection">
-
-    <section class="newsletter">
-      <p> Sign up for our newsletter to get the latest updates.</p>
-      <form action="https://httpbin.org/anything" method="POST" target="_blank">
-        <input type="email" name="email" placeholder="Enter your email" required>
-
-        <div class="newsletter-agree">
-          <input type="checkbox" id="agree" name="agree" required>
-          <label for="agree">
-            I agree to receive emails and accept the privacy policy.
-          </label>
-        </div>
-
-        <button type="submit">Subscribe</button>
-    </section>
-
-    <div class="text-logo-container">
-
-      <p class="footertext">© 2025 Naviaud.io — Established in 2020, Naviaud.io is dedicated to crafting cutting-edge
-        audio plugins that
-        empower creators, producers, and audio professionals to achieve unparalleled sound quality. </p>
-
-      <div class="social-media-icons">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-          <img src="./Images/social-media-logos/facebook-logo.svg" alt="Facebook logo">
-        </a>
-
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-          <img src="./Images/social-media-logos/instagram-logo.svg" alt="Instagram logo">
-        </a>
-
-        <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-          <img src="./Images/social-media-logos/tiktok-logo.svg" alt="Tiktok logo">
-        </a>
-
-        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-          <img src="./Images/social-media-logos/youtube-logo.svg" alt="Youtube logo">
-        </a>
-
+      <div class="cards">
+        <p> "Put this on any melodic instrument and watch it come to life, absolutely incredible!"
+        </p>
+        <p class="testimonial-owner">
+          Alex Romero <br>
+          Lunar Sound Labs
+        </p>
       </div>
-    </div>
+  </div>
 
+  </article>
+
+
+  <footer>
+    <!-- <p>Very nice looking footer</p> -->
   </footer>
 
 
@@ -176,7 +228,8 @@
 
 
 
-  <script src="script.js"></script>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
