@@ -451,8 +451,7 @@ h3 {
 .bento-box-container {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-columns: repeat(auto-fill, minmax(130px, 130px));
   color: var(--text);
   margin: 0 auto;
   padding: var(--space-1);
@@ -468,55 +467,24 @@ h3 {
   flex-direction: column;
   font-size: var(--font-sm);
   text-align: center;
-  padding: var(--space-4);
   border-radius: var(--radius-md);
   background-color: var(--bg-light);
-  padding: var(--space-4);
   box-shadow: var(--shadow-sm);
   outline: 1px solid var(--border-muted);
   transition: filter 0.35s ease-in-out;
-  line-height: 1.2;
+  line-height: 1.1;
+  aspect-ratio: 1 / 1;
+
 }
+
+
+
 
 .bento-box-container div:hover {
   filter: brightness(1.0) contrast(1.2);
 }
 
-.bento-box-latency {
-  grid-column: span 12;
-}
 
-.bento-box-oversampling {
-  grid-column: span 4;
-}
-
-.bento-box-format {
-  grid-column: span 4;
-  grid-row: span 2;
-}
-
-
-.bento-box-update {
-  grid-column: span 4;
-  grid-row: span 2;
-}
-
-.bento-box-scaling {
-  grid-column: span 4;
-}
-
-.bento-box-install {
-  grid-column: span 4;
-}
-
-
-.bento-box-cpu {
-  grid-column: span 4;
-}
-
-.bento-box-price {
-  grid-column: span 4;
-}
 
 
 
