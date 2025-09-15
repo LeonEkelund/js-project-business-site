@@ -474,7 +474,8 @@ h3 {
   padding: var(--space-4);
   box-shadow: var(--shadow-sm);
   outline: 1px solid var(--border-muted);
-  transition: filter 0.35s ease-in-out
+  transition: filter 0.35s ease-in-out;
+  line-height: 1.2;
 }
 
 .bento-box-container div:hover {
