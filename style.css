@@ -287,6 +287,7 @@ h1 {
   transition: all 0.2s ease;
   margin-top: var(--space-1);
   color: black;
+  cursor: pointer;
 }
 
 .buy-btn:hover {
@@ -502,6 +503,7 @@ h3 {
   filter: brightness(1.0) contrast(1.2);
 }
 
+/* BENTO BOX MEDIA QUERIES */
 
 @media (min-width: 1024px) {
 
@@ -509,7 +511,8 @@ h3 {
   .bento-box-container {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 20%));
+    grid-template-columns: repeat(8, 1fr);
+    width: 90%;
 
   }
 
@@ -560,4 +563,14 @@ h3 {
 
 .testimonial-owner {
   color: var(--text-muted-2);
+}
+
+/* CARDS MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+  .card-container {
+    overflow-x: visible;
+  }
+
 }
