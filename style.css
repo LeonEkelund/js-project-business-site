@@ -111,7 +111,6 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* logo left, hamburger right */
   align-items: center;
   padding: var(--space-1);
   background-color: var(--bg);
@@ -458,6 +457,7 @@ h3 {
 
   .information-section p {
     width: 30%;
+    font-size: var(--font-md);
   }
 
 }
@@ -518,11 +518,26 @@ h3 {
 
 }
 
+/* NAVIAUDIO COMPANY INFORMATION */
 
+.company-information p {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-sm);
+  font-weight: var(--font-weight-regular);
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 0 var(--space-6) 0;
+}
 
-
-
-
+h2 {
+  font-size: var(--font-3xl);
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-3);
+  margin: 0;
+}
 
 
 /* CARDS */
@@ -568,9 +583,71 @@ h3 {
 /* CARDS MEDIA QUERIES */
 
 @media (min-width: 1024px) {
-
   .card-container {
-    overflow-x: visible;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    gap: var(--space-6);
+    flex-wrap: nowrap;
+    margin: 0;
+    gap: var(--space-1);
+    padding-left: 0;
+    padding-right: 0;
   }
 
+  .cards {
+    margin: 0;
+    gap: 0;
+
+  }
+}
+
+
+/* NEWSLETTER FORM */
+
+
+
+.copyright {
+  font-size: xx-small;
+  text-align: center;
+  color: var(--text-muted-2);
+  font-weight: var(--font-weight-bold);
+}
+
+
+.newsletter-container {
+  background-color: var(--bg-light);
+  width: 90%;
+  margin: 0 auto;
+  border-radius: var(--radius-lg);
+  box-sizing: border-box;
+  padding: var(--space-5);
+}
+
+.newsletter-content {
+  font-size: var(--font-xs);
+  font-family: var(--font-body);
+  text-align: center;
+  color: var(--text-muted-2);
+
+
+}
+
+.newsletter-content p {
+  font-size: var(--font-md);
+  color: var(--text);
+}
+
+.newsletter-content button {
+  margin-top: 7%;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-sm);
+  color: black;
+  border: none;
+  cursor: pointer;
 }
