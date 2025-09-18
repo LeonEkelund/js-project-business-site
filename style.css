@@ -278,10 +278,10 @@ h1 {
 .buy-btn {
   margin: 0 auto;
   font-size: var(--font-md);
-  border-radius: var(--space-2);
   padding: 10px 25px;
   border: none;
   font-weight: var(--font-weight-medium);
+  border-radius: var(--space-2);
   box-shadow: var(--shadow-lg);
   transition: all 0.2s ease;
   margin-top: var(--space-1);
@@ -520,6 +520,12 @@ h3 {
 
 /* NAVIAUDIO COMPANY INFORMATION */
 
+.company-information {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .company-information p {
   display: flex;
   justify-content: center;
@@ -539,6 +545,34 @@ h2 {
   margin: 0;
 }
 
+company-information img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  filter: drop-shadow(0px 20px 60px #2e2e2e);
+}
+
+
+@media (min-width: 1024px) {
+
+  .company-information img {
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto var(--space-4) auto;
+  }
+
+  .company-information p {
+    width: 30%;
+    font-size: var(--font-md);
+  }
+
+}
 
 /* CARDS */
 
@@ -592,9 +626,10 @@ h2 {
     gap: var(--space-6);
     flex-wrap: nowrap;
     margin: 0;
-    gap: var(--space-1);
+    gap: var(--space-6);
     padding-left: 0;
     padding-right: 0;
+
   }
 
   .cards {
@@ -605,8 +640,12 @@ h2 {
 }
 
 
-/* NEWSLETTER FORM */
+/* FOOTER */
 
+footer {
+  margin-top: var(--space-6);
+  border-top: 2px solid var(--border-muted);
+}
 
 
 .copyright {
@@ -624,6 +663,7 @@ h2 {
   border-radius: var(--radius-lg);
   box-sizing: border-box;
   padding: var(--space-5);
+  margin-top: var(--space-6);
 }
 
 .newsletter-content {
@@ -631,8 +671,6 @@ h2 {
   font-family: var(--font-body);
   text-align: center;
   color: var(--text-muted-2);
-
-
 }
 
 .newsletter-content p {
@@ -650,4 +688,25 @@ h2 {
   color: black;
   border: none;
   cursor: pointer;
+}
+
+.newsletter-content button:hover {
+  transform: scale(1.10);
+}
+
+
+
+/* FOOTER MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+
+  .newsletter-container {
+    width: 30%;
+  }
+
+  .newsletter-content button {
+    border-radius: var(--space-2);
+    transition: all 0.2s ease;
+  }
+
 }
