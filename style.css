@@ -60,14 +60,6 @@
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  /* Use later */
-  /* --line-tight: 1.2;
-  --line-normal: 1.5;
-  --line-loose: 1.75;
-  --tracking-tight: -0.02em;
-  --tracking-normal: 0;
-  --tracking-wide: 0.05em; */
-
 }
 
 body {
@@ -635,8 +627,11 @@ company-information img {
   .cards {
     margin: 0;
     gap: 0;
+    flex: 1 0 150px;
 
   }
+
+
 }
 
 
